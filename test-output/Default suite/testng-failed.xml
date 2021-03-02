@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.shortinterest.testscripts.TC_ValidateMarginApplication_001">
+      <class name="com.qa.testscripts.TC5_ValidatingTabs">
         <methods>
-          <include name="MarginMoneyLineinGFW"/>
+          <include name="ValidatingTab"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.shortinterest.testscripts.TC_ValidateMarginApplication_001 -->
+      </class> <!-- com.qa.testscripts.TC5_ValidatingTabs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
