@@ -7,7 +7,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
- import org.openqa.selenium.OutputType;
+import javax.imageio.ImageIO;
+
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +18,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+
 import org.apache.commons.io.FileUtils;
 
  
@@ -62,11 +69,18 @@ public class TestBase {
 	
 	public void captureScreenShot(WebDriver Driver, String tname) throws IOException
 	{
-		TakesScreenshot ts = (TakesScreenshot) Driver;
-		File Src= ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File(System.getProperty("user.dir")+"/screenshots/" + tname + ".png");
-		FileUtils.copyFile(Src, dest);
-		System.out.println("Screen shot is captured");
+		
+        AShot Screen = new AShot();
+        Screenshot sshot = Screen.shootingStrategy(ShootingStrategies.viewportPasting(200)).takeScreenshot(driver);
+        String Dest = System.getProperty("user.dir") + "/Screenshots/" + tname + ".jpeg";
+        File FinalDestination = new File(Dest);
+        ImageIO.write(sshot.getImage(), "jpeg", FinalDestination);
+        
+//		TakesScreenshot ts = (TakesScreenshot) Driver;
+//		File Src= ts.getScreenshotAs(OutputType.FILE);
+//		File dest = new File(System.getProperty("user.dir")+"/screenshots/" + tname + ".png");
+//		FileUtils.copyFile(Src, dest);
+//		System.out.println("Screen shot is captured");
          
  
 	} 

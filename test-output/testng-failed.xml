@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
   <test name="Test(failed)">
     <classes>
-      <class name="com.qa.testscripts.TC11_ITestListener">
+      <class name="com.qa.testscripts.TC14_HighlitFields">
         <methods>
-          <include name="method2"/>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="highlighterElement"/>
         </methods>
-      </class> <!-- com.qa.testscripts.TC11_ITestListener -->
+      </class> <!-- com.qa.testscripts.TC14_HighlitFields -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

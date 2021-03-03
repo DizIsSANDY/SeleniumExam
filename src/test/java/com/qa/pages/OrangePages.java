@@ -45,9 +45,24 @@ public class OrangePages {
 	
 	@FindBy(xpath="//b[contains(text(),'Dashboard')]")
 	WebElement DashBoard;
-	public String GetDashBoardCOnfirmation()
+	public String getDashBoardCOnfirmation()
 	{
 		return DashBoard.getText();	
+	}
+	
+	
+	@FindBy(xpath="//b[contains(text(),'Dashboard')]")
+	WebElement DashBoardTab;
+	public void  getDashBoardUsingTabName()
+	{
+		DashBoardTab.click();
+	}
+	
+	@FindBy(xpath="//h1[contains(text(),'Dashboard')]")
+	WebElement DashBoardTabHeader;
+	public String getDashBoardConfirmtionUsingHeaderText()
+	{
+		return DashBoardTabHeader.getText();
 	}
 	
 
@@ -173,6 +188,8 @@ public class OrangePages {
 	}
 	
 	
+	
+	
 	@FindAll(@FindBy(xpath="//input[contains(@name,'txt')]"))
 	@CacheLookup
 	List<WebElement> AllTextBoxs;
@@ -181,6 +198,22 @@ public class OrangePages {
 		return AllTextBoxs;
 	}
 	
+	@FindBy(css="#menu_pim_viewPimModule")
+
+	@CacheLookup
+	WebElement CSSPIMTAB;
+	public void CSSPIMTab()
+	{
+		CSSPIMTAB.click();
+	}
+	
+	@FindBy(css="div.menu:nth-child(2) ul.main-menu-first-level-unordered-list.main-menu-first-level-unordered-list-width li.current.main-menu-first-level-list-item:nth-child(4) a.firstLevelMenu:nth-child(1) > b:nth-child(1)")
+	@CacheLookup
+	WebElement CSSTime;
+	public void CSSTimeTab()
+	{
+		CSSTime.click();
+	}
 	
 	
 	
