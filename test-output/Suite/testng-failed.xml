@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
   <test name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.shortinterest.testscripts.TC_ValidateMarginApplication_001">
+      <class name="com.qa.testscripts.TC14_HighlitFields">
         <methods>
-          <include name="loadPages"/>
-          <include name="MarginMoneyLineinGFW"/>
           <include name="setUp"/>
+          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="highlighterElement"/>
         </methods>
-      </class> <!-- com.shortinterest.testscripts.TC_ValidateMarginApplication_001 -->
+      </class> <!-- com.qa.testscripts.TC14_HighlitFields -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

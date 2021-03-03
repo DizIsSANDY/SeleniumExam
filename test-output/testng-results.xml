@@ -1,123 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Clicked on BPS Connect]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on BPS Margin]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on BPS Margin Moneyline]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="62575" started-at="2021-02-08T18:28:36Z" finished-at="2021-02-08T18:29:38Z">
+  <suite name="Suite" duration-ms="39075" started-at="2021-03-03T16:44:57Z" finished-at="2021-03-03T16:45:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="62575" started-at="2021-02-08T18:28:36Z" finished-at="2021-02-08T18:29:38Z">
-      <class name="com.shortinterest.testscripts.TC_ValidateMarginApplication_001">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.shortinterest.testscripts.TC_ValidateMarginApplication_001@1794d431]" name="setUp" is-config="true" duration-ms="6138" started-at="2021-02-08T23:58:36Z" finished-at="2021-02-08T23:58:42Z">
+    <test name="Test" duration-ms="39075" started-at="2021-03-03T16:44:57Z" finished-at="2021-03-03T16:45:36Z">
+      <class name="com.qa.testscripts.TC15_XpathHigliter">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.TC15_XpathHigliter@617faa95]" name="setUp" is-config="true" duration-ms="18594" started-at="2021-03-03T22:14:57Z" finished-at="2021-03-03T22:15:16Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loadPages()[pri:0, instance:com.shortinterest.testscripts.TC_ValidateMarginApplication_001@1794d431]" name="loadPages" is-config="true" duration-ms="63" started-at="2021-02-08T23:58:42Z" finished-at="2021-02-08T23:58:42Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testscripts.TC15_XpathHigliter@617faa95]" name="setup" is-config="true" duration-ms="67" started-at="2021-03-03T22:15:16Z" finished-at="2021-03-03T22:15:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadPages -->
-        <test-method status="FAIL" signature="MarginMoneyLineinGFW()[pri:0, instance:com.shortinterest.testscripts.TC_ValidateMarginApplication_001@1794d431]" name="MarginMoneyLineinGFW" duration-ms="56320" started-at="2021-02-08T23:58:42Z" finished-at="2021-02-08T23:59:38Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='account']"}
-  (Session info: chrome=88.0.4324.146)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HBADT4800457', ip: '10.104.94.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GAJAWA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53661}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ac481b08a0e4f9b20fc94eb5801636b5
-*** Element info: {Using=xpath, value=//input[@id='account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='account']"}
-  (Session info: chrome=88.0.4324.146)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HBADT4800457', ip: '10.104.94.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GAJAWA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53661}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ac481b08a0e4f9b20fc94eb5801636b5
-*** Element info: {Using=xpath, value=//input[@id='account']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.clear(Unknown Source)
-	at com.shortinterest.pages.GFWPages.SetAccountinMoneyline(GFWPages.java:66)
-	at com.shortinterest.testscripts.TC_ValidateMarginApplication_001.MarginMoneyLineinGFW(TC_ValidateMarginApplication_001.java:65)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="highlighterElement()[pri:0, instance:com.qa.testscripts.TC15_XpathHigliter@617faa95]" name="highlighterElement" duration-ms="19386" started-at="2021-03-03T22:15:16Z" finished-at="2021-03-03T22:15:35Z">
           <reporter-output>
-            <line>
-              <![CDATA[Clicked on BPS Connect]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on BPS Margin]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on BPS Margin Moneyline]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- MarginMoneyLineinGFW -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.shortinterest.testscripts.TC_ValidateMarginApplication_001@1794d431]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-02-08T23:59:38Z" finished-at="2021-02-08T23:59:38Z">
+        </test-method> <!-- highlighterElement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testscripts.TC15_XpathHigliter@617faa95]" name="tearDown" is-config="true" duration-ms="983" started-at="2021-03-03T22:15:35Z" finished-at="2021-03-03T22:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.shortinterest.testscripts.TC_ValidateMarginApplication_001 -->
+      </class> <!-- com.qa.testscripts.TC15_XpathHigliter -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
